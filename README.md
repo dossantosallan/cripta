@@ -8,6 +8,9 @@ Roguelike de ação isométrico que roda no navegador. Desça cinco andares sob 
 - **Bárbaro** — corpo a corpo, Redemoinho e Grito de guerra.
 - **Necromante** — Lança de Osso, Explosão de Cadáver e esqueletos invocados.
 - **Feiticeira** — Bola de Fogo, Nova de Gelo e Hidra Flamejante.
+- **Hipotético** — homem de camiseta amarela num raptor: Investida e Rugido Primal.
+
+Armas são por classe: varinhas para o Necromante, cajados e orbes para a Feiticeira, armas de corpo a corpo para Bárbaro e Hipotético.
 
 ## Controles
 - Clique ou toque para andar; clique no inimigo para atacar.
