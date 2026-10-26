@@ -1,0 +1,19 @@
+Sprites dos heróis da Cripta
+=============================
+
+Origem: Flare: Empyrean Campaign (https://flarerpg.org, https://github.com/flareteam/flare-game)
+Copyright ©2010-2013 Clint Bellanger; os colaboradores mantêm os direitos de suas contribuições.
+Arte do Flare: Blarumyrran, Brandon Morris "Augmentality", Clint Bellanger, Holly Daniel,
+Justin Jacobs, Justin Nichol, Jessica "Zeldyn" Cox, remaxim, rubberduck, Sarah Benalene,
+Scrittl, Stefan Beller, e os artistas listados em CREDITS.txt do projeto Flare.
+
+Licença: Creative Commons Atribuição-CompartilhaIgual 3.0 (CC-BY-SA 3.0), texto em
+LICENCA-CC-BY-SA-3.0.txt e em https://creativecommons.org/licenses/by-sa/3.0/
+
+Alterações feitas para a Cripta (também sob CC-BY-SA 3.0):
+- peças do avatar (cabeça, peito, pernas, pés, mãos e armas) reduzidas a 75% e reorganizadas
+  em atlas WebP só com as animações usadas (parado, correndo, golpe/conjuração, dano);
+- conjunto de mago masculino recolorido em verde-escuro e osso para o Necromante (*_nec.webp);
+- ícones do aplicativo (icon-192.png, icon-512.png) montados a partir dessas peças.
+
+Commit de origem: flareteam/flare-game af6eee6d339ac98011864bfe89da837fe7769c28

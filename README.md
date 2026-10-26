@@ -21,4 +21,8 @@ Esqueletos, carniçais, duendes com xamã, afogados, espectros, cultistas e seis
 
 O progresso do altar fica salvo no navegador e pode ser levado para outro aparelho com o código de progresso (`CR-…`).
 
-Arquivo único (`index.html`), sem dependências além de fontes do Google Fonts.
+## Jogar sem internet
+Abra o site uma vez com internet. Depois ele funciona offline, e no celular dá para instalar: no iPhone, Compartilhar → Adicionar à Tela de Início; no Android, menu → Instalar app.
+
+## Créditos da arte
+Os heróis usam sprites do projeto [Flare](https://flarerpg.org) (Clint Bellanger e colaboradores), sob [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), reduzidos, reorganizados e em parte recoloridos. Detalhes em `sprites/CREDITOS.txt`; as imagens alteradas seguem a mesma licença. O resto da arte (cenário, monstros, efeitos) é desenhado por código no próprio `index.html`.
