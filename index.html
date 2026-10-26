@@ -1135,7 +1135,7 @@ function figSorc(o){const{F,c,g,r}=hp(o),G=gait(o,4.4,1.8);o.oy=-G.bob;cx.transl
 // ----- heróis em sprites pré-renderizados (arte do projeto Flare, CC-BY-SA 3.0; ver sprites/CREDITOS.txt)
 // Cada herói é montado em camadas (cabeça, peito, pernas, pés, mãos, arma) conforme o equipamento.
 // Enquanto as imagens carregam, ou se falharem, o herói desenhado por código continua sendo usado.
-const SPR=(()=>{const base='sprites/',U=.66;let man=null,imgs={},redraw=0;
+const SPR=(()=>{const base='sprites/',U=.5;let man=null,imgs={},redraw=0;
   const ORD=['main,feet,legs,hands,chest,off,head','main,feet,legs,hands,chest,off,head','main,feet,legs,hands,chest,off,head','feet,legs,hands,chest,off,head,main','feet,legs,hands,chest,off,head,main','feet,legs,hands,chest,off,head,main','feet,legs,hands,main,chest,head,off','main,feet,legs,hands,chest,head,off'].map(s=>s.split(','));
   try{fetch(base+'manifest.json').then(r=>r.ok?r.json():null).then(m=>{if(!m)return;man=m;for(const c of['barb','necro','sorc'])for(const k of Object.values(layers(c,{})))img(k)}).catch(()=>{})}catch(e){}
   function img(k){if(!man||!k||!man[k])return null;let i=imgs[k];if(!i){i=imgs[k]=new Image();i.decoding='async';i.onload=()=>{i.ok=1;ready()};i.onerror=()=>{i.bad=1};i.src=base+k+'.webp'}return i.ok?i:null}
@@ -1810,7 +1810,7 @@ function drawPortrait(canvas,cls){
   const g=cx.createRadialGradient(w/2,h*.62,4,w/2,h*.62,w*.6);g.addColorStop(0,cls==='necro'?'rgba(80,200,140,.28)':cls==='sorc'?'rgba(120,150,255,.3)':'rgba(220,120,60,.3)');g.addColorStop(1,'rgba(0,0,0,0)');cx.fillStyle=g;cx.fillRect(0,0,w,h);
   cx.translate(w/2,h*.92);cx.fillStyle='rgba(0,0,0,.5)';cx.beginPath();cx.ellipse(0,0,22,8,0,0,6.3);cx.fill();cx.scale(1.75,1.75);
   const o={ix:0,iy:0,f:1,walk:0,moving:false,flash:false,atk:-1,t:0,noEmit:true,eq:cls==='barb'?{arma:{base:'Machado de Mão',rar:'normal'}}:{}};
-  o.cls=cls;cx.save();cx.scale(.8,.8);cx.translate(0,-4);const okS=SPR.draw(o);cx.restore();if(!okS)heroSprite(cls==='necro'?figNecro:cls==='sorc'?figSorc:figBarb,o);cx=prev;
+  o.cls=cls;cx.save();cx.scale(1.05,1.05);cx.translate(0,-3);const okS=SPR.draw(o);cx.restore();if(!okS)heroSprite(cls==='necro'?figNecro:cls==='sorc'?figSorc:figBarb,o);cx=prev;
 }
 function renderClassPick(){
   document.querySelectorAll('.cls').forEach(b=>{const on=b.dataset.cls===selCls;b.classList.toggle('on',on);b.setAttribute('aria-checked',on)});
