@@ -16,7 +16,8 @@ Esqueletos, carniçais, duendes com xamã, afogados, espectros, cultistas e seis
 
 ## Controles
 - Clique ou toque para andar; clique no inimigo para atacar.
-- `1` e `2`: habilidades da classe · `3`: poção · `I`: bolsa · `T`: árvore de bênçãos.
+- `1` e `2`: habilidades da classe · `3`: poção · `I`: bolsa · `T`: árvore de bênçãos · `Esc`: configurações.
+- `F8`: Modo Melhorado (luz, som, câmera e efeitos; não muda as regras). Veja [MODO-MELHORADO.md](MODO-MELHORADO.md).
 
 O progresso do altar fica salvo no navegador e pode ser levado para outro aparelho com o código de progresso (`CR-…`).
 
